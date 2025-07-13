@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1 เพิ่มข้อมูล
+    form(action = "/input" method= "POST")
+        label
+            span Name
+            input(required= "" type= "text" name= "IName")
+            br
+        label
+            span Detail
+            input(required= "" type= "text" name= "Details")
+            br
+        label
+            span Image
+            input(required= "" type= "text" name= "Image")
+            br
+        input(type="submit" value="ส่งข้อมูล")

@@ -1,0 +1,14 @@
+extends layout
+
+block styles
+  link(rel='stylesheet', href= '/stylesheets/index.css')
+
+block content
+  div(class='header-box')
+    h1= title
+
+  p Welcome to #{title}
+  a.btn(href='/users') Users
+  br
+  a.btn(href='/input') input
+

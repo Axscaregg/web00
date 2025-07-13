@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 ข้อมูลจากฐานข้อมูล
+
+    each user in users
+        p ID: #{user.ID}
+        p ชื่อ: #{user.Name}
+        p รายละเอียด: #{user.Details}
+        if user.Picture
+            p รูปภาพ:
+            img(src=`/${user.Picture}`, alt=user.Name, width="120")
+
