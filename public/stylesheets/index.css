@@ -3,11 +3,11 @@
     border: black 1px solid;
     margin: auto;
     padding: 20px;
-    background-image: url("/images/bnr_dmm.jpg");
-    background-size: cover  ;
+    background:url("/images/bnr_dmm.jpg");
+    background-size: cover;
     max-width: 400px;
     position: relative;
-    
+
 }
 .header-box::before{
     content: "";
@@ -21,4 +21,10 @@
     position: relative;
     z-index: 2;
 
+}
+nav{ background: orange;
+    width: 100%;
+}
+.custom-rounded-bottom{
+    border-radius: 0 0 40px 40px;
 }

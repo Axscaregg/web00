@@ -4,11 +4,18 @@ block styles
   link(rel='stylesheet', href= '/stylesheets/index.css')
 
 block content
+  nav.navbar.navbar-expand-lg.navbar-light.mb-5.custom-rounded-bottom.mx-auto
+    .container-fluid
+      button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      a.navbar-brand(href='/')
+        img(src='/images/logo_color_w.jpg', alt='Logo', height='50', class='d-inline-block align-text-top me-2')
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav
+          span.navbar-text.me-5.ms-5 Welcome to #{title}
+          li.nav-item.me-5
+            a.btn.btn-outline-primary.me-2(href='/users') Users
+          li.nav-item
+            a.btn.btn-outline-secondary(href='/input') input
   div(class='header-box')
     h1= title
-
-  p Welcome to #{title}
-  a.btn(href='/users') Users
-  br
-  a.btn(href='/input') input
-
