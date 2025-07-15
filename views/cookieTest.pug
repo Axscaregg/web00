@@ -1,0 +1,26 @@
+extends  layout
+
+block content
+    h1 Test Cookie
+    button(type='button' onclick='setCookie()') Set cookie
+    br
+    button(type='button' onclick='getCookie()') Get cookie
+    br
+    button(type='button' onclick='clearCookie()') Clear cookie
+    div#result
+        script.
+            async function setCookie() {
+                const res = await fetch('/cook/setcookie' , {method:'POST'})
+                const data = await res.json()
+                document.getElementById('result').innerText =data.message
+            }
+            async function getCookie(){
+                const res = await fetch('/cook/getcookie', {method:'GET'})
+                const data = await res.json()
+                document.getElementById('result').innerText = data.name
+            }
+            async function clearCookie() {
+                const res = await fetch('/cook/clearcookie', {method: 'POST'});
+                const data = await res.json();
+                document.getElementById('result').innerText = data.message;
+            }
