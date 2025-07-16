@@ -15,9 +15,30 @@ block content
           span.navbar-text.me-5.ms-5 Welcome to #{title}
           li.nav-item.me-5
             a.btn.btn-outline-primary.me-2(href='/users') Users
-          li.nav-item
+          li.nav-item.me-5
             a.btn.btn-outline-secondary(href='/input') input
-            li.nav-item
-              a.btn.btn-outline-secondary(href='/cook') cookie
-  div(class='header-box')
-    h1= title
+          li.nav-item.me5
+            a.btn.btn-outline-secondary(href='/cook') cookie
+  div.container-fluid
+    div(class='header-box').my-5
+      h1= title
+
+    div
+      .container-fluid
+        .row
+          .col.d-flex.justify-content-center
+            .border.border-success.border(style='width: 40%').p-3
+              p.text-center
+                 | นาย ปฏิภาณ โรจนรัตน์ <br>
+                 | จบจาก รร.สามัคคีวิทยาคม ปัจจุบันศึกษาที่ ม.รังสิต คณะวิทยาการคอมปี 3 <br>
+                 | ประวัติชีวิตที่ผ่านมา เคยเข้า ม.มหิดล ม.บางมด สจล ธรรมศาสตร์ เข้าเยอะปะละครับ <br>
+                 | โรคประจำตัว มะเร็งต่อมน้ำเหลือง (ปัจจุบันรักษาหายแล้ว แต่สิ่งที่เสียไปไม่กลับมา 55) <br>
+                 | งานอดิเรก เล่นเกม นอน อ่านมังงะ,นิยาย  <br>
+  div
+    .container-fluid.justify
+        img.round.float-start.my-5(src='/images/kotone.jpg', alt='kotone', style='width: 484px; height: 602px;' +
+        'margin-left:6rem; margin-right:6rem;')
+        img.round.float-start.my-5(src='/images/Saki.jpg', alt='saki', style='width: 345px; height: 602px;' +
+        'margin-left:6rem; margin-right:6rem;')
+        img.round.float-start.my-5(src='/images/Temari.jpg', alt='temari', style='width: auto; height: 500px;' +
+        'margin-left:6rem; margin-right:6rem;')
